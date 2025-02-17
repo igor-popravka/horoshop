@@ -25,7 +25,7 @@ services:
     working_dir: /app
     volumes:
       - ./source:/app
-      - ./config/php-fpm/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      #- ./config/php-fpm/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - ./config/php-fpm/php.dev.ini:/usr/local/etc/php/php.ini
       - ~/.ssh/:/root/.shh/
 
@@ -36,7 +36,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "horoshop"
-      MYSQL_PASSWORD: "UShop#457"
+      MYSQL_PASSWORD: "ushop"
       MYSQL_USER: "ushop"
     volumes:
       - ./storage/mysql:/var/lib/mysql
