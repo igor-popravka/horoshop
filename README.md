@@ -4,17 +4,17 @@
 ```shell
 docker compose up -d
 ```
-2. Go to container api and install vendors
+2. Go to container app and install vendors
 
 ```shell
 composer install
 ```
-3. Go to container api and execute migrations
+3. Go to container app and execute migrations
 
 ```shell
 php bin/console doctrine:migrations:migrate
 ```
-4. Go to container api and execute fixture
+4. Go to container app and execute fixture
 
 ```shell
 php bin/console doctrine:fixtures:load
